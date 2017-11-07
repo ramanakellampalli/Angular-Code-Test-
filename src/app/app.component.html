@@ -1,0 +1,14 @@
+<h2>Data List</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th (click)="doSorting(k)">Category</th>
+    <th>Amount</th>
+  </tr>
+  <tr  *ngFor="let item of items">
+    <td>{{ item.name}}</td>
+    <td>{{ item. category}}</td>
+    <td>{{ item.amount }}</td>
+  </tr>
+  </table>
